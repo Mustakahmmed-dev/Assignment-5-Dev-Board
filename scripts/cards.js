@@ -168,3 +168,14 @@ document.getElementById("clear-history").addEventListener("click", function(even
     }
 
 })
+
+
+// Setting up today's date and day
+
+const todayDate = new Date();
+// const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// const today = days[todayDate.getDay()];
+// document.getElementById("today").textContent = today + ",";
+
+document.getElementById("today-date").textContent = todayDate.toDateString();
