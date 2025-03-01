@@ -17,8 +17,10 @@ document.getElementById("btn-task-1").addEventListener("click", function(){
         alert("Congrats! You have completed all the tasks")
     }
 
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task1").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at  ${timeNow} `;
     setHistory(activityText);
    
 })
@@ -42,8 +44,10 @@ document.getElementById("btn-task-2").addEventListener("click", function(){
         alert("Congrats! You have completed all the tasks")
     }
 
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task2").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at ${timeNow}`;
     setHistory(activityText);
 })
 
@@ -66,8 +70,10 @@ document.getElementById("btn-task-3").addEventListener("click", function(){
         alert("Congrats! You have completed all the tasks")
     }
 
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task3").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at ${timeNow}`;
     setHistory(activityText);
 })
 
@@ -89,8 +95,11 @@ document.getElementById("btn-task-4").addEventListener("click", function(){
     if(remaining <= 0){
         alert("Congrats! You have completed all the tasks")
     }
+
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task4").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at ${timeNow}`;
     setHistory(activityText);
 })
 
@@ -113,8 +122,10 @@ document.getElementById("btn-task-5").addEventListener("click", function(){
         alert("Congrats! You have completed all the tasks")
     }
 
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task5").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at ${timeNow}`;
     setHistory(activityText);
 })
 
@@ -137,8 +148,10 @@ document.getElementById("btn-task-6").addEventListener("click", function(){
         alert("Congrats! You have completed all the tasks")
     }
 
+    const now = new Date();
+    const timeNow = now.toLocaleTimeString();
     const cardTitle = document.getElementById("task6").innerText;
-    const activityText = `You have successfully completed the task "${cardTitle}" at `;
+    const activityText = `You have successfully completed the task "${cardTitle}" at ${timeNow}`;
     setHistory(activityText);
 })
 
