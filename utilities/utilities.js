@@ -16,8 +16,9 @@ function getInnerTextByID(id){
 
  function setHistory(activity){
     const activities = document.getElementById("activities-container");
-    
     const p = document.createElement("p");
+    p.classList.add("activity-bg");
+    
     p.innerText = activity;
     activities.appendChild(p)
  }
