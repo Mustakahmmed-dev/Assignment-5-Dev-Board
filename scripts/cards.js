@@ -170,14 +170,9 @@ document.getElementById("clear-history").addEventListener("click", function(even
 })
 
 
-// Setting up today's date and day
+// Setting today's date 
 
 const todayDate = new Date();
-// const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-// const today = days[todayDate.getDay()];
-// document.getElementById("today").textContent = today + ",";
-
 document.getElementById("today-date").textContent = todayDate.toDateString();
 
 
@@ -199,3 +194,12 @@ document.getElementById("back-to-desk").addEventListener("click", function(event
     showElementByID("completion-container");
 })
 
+
+
+
+// Change bg color on btn click
+document.getElementById("change-bg-color").addEventListener("click", function(){
+    const colors = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    const body = document.querySelector("body");
+    body.style.backgroundColor = colors;
+})
