@@ -179,3 +179,23 @@ const todayDate = new Date();
 // document.getElementById("today").textContent = today + ",";
 
 document.getElementById("today-date").textContent = todayDate.toDateString();
+
+
+
+// Show Blog section and hide current tasks section
+document.getElementById("discover-div").addEventListener("click", function(){
+    hideElementByID("tasks-section");
+    hideElementByID("completion-container");
+
+    showElementInBlock("blogs-container");
+    showElementInBlock("back-to-desk");
+})
+
+document.getElementById("back-to-desk").addEventListener("click", function(event){
+    hideElementByID("blogs-container");
+    hideElementByID("back-to-desk");
+
+    showElementByID("tasks-section");
+    showElementByID("completion-container");
+})
+

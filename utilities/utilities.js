@@ -22,3 +22,18 @@ function getInnerTextByID(id){
     p.innerText = activity;
     activities.appendChild(p)
  }
+
+
+// Hide Element By ID
+function hideElementByID(id){
+   document.getElementById(id).style.display = "none";
+
+
+}
+// Show element by id
+function showElementByID(id){
+   document.getElementById(id).style.display = "flex";
+}
+function showElementInBlock(id){
+   document.getElementById(id).style.display = "block";
+}
